@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\sbs-game\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93C036AB-FFAC-4F23-A1B0-7C0238231940}|Program.vcxproj|C:\\Users\\user\\Desktop\\sbs-game\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{93C036AB-FFAC-4F23-A1B0-7C0238231940}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{08CD6AC5-6B16-4924-BDE3-C254AAF4DA4C}|..\\Class2th (Variable \u0026 Constant)\\Class2th (Variable \u0026 Constant).vcxproj|C:\\Users\\user\\Desktop\\sbs-game\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{08CD6AC5-6B16-4924-BDE3-C254AAF4DA4C}|..\\Class2th (Variable \u0026 Constant)\\Class2th (Variable \u0026 Constant).vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +24,9 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\user\\Desktop\\sbs-game\\Program\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-07-17T10:08:53.164Z",
+              "WhenOpened": "2025-07-18T09:54:20.399Z",
               "EditorCaption": ""
             }
           ]
