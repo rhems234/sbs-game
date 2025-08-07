@@ -1,2 +1,5 @@
 ﻿  Source.c
+C:\Users\user\Desktop\sbs-game\Program\Source.c(127,16): warning C4133: '=': 'Node *'과(와) 'Node1 *' 사이의 형식이 호환되지 않습니다.
+C:\Users\user\Desktop\sbs-game\Program\Source.c(128,16): warning C4133: '=': 'Node *'과(와) 'Node1 *' 사이의 형식이 호환되지 않습니다.
+C:\Users\user\Desktop\sbs-game\Program\Source.c(135,21): warning C4133: '=': 'Node1 *'과(와) 'Node *' 사이의 형식이 호환되지 않습니다.
   Program.vcxproj -> C:\Users\user\Desktop\sbs-game\Program\x64\Debug\Program.exe

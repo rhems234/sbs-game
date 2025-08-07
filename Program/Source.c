@@ -2,9 +2,9 @@
 #include <math.h>
 
 struct Data {
-    char text;
-    int num;
-    float flt;
+    char grade;
+    int health;
+    double experience;
 };
 
 struct enemy
@@ -17,6 +17,23 @@ struct player
 {
     int x;
     int y;
+};
+
+struct class {
+    char garde;
+    double experience;
+    int health;
+};
+
+struct Node {
+    int data;
+    struct Node1* next;
+};
+
+struct currentNode
+{
+    int data; 
+    struct currentNode* next;
 };
 
 int main()
@@ -56,32 +73,68 @@ int main()
     // 제곱근 : sqrt(49) -> 7
     // 제곱 : pow(5, 2) -> 25
 
-    int player_x = 0;
+   /* int player_x = 0;
     int player_y = 0;
     int enemy_x = 0;
     int enemy_y = 0;
 
-    struct enemy enemy = { scanf_s("%d %d", &enemy_x, &enemy_y) };
-    struct player player = { scanf_s("%d %d", &player_x, &player_y) };
+    printf("유닛 xy축 지정 : ");
+    scanf_s("%d %d", &enemy_x, &enemy_y);
 
-    printf("플레이어 좌표 : %d %d\n", player_x, player_y);
-    printf("적 좌표 : %d %d\n", enemy_x, enemy_y);
+    printf("플레이어 xy축 지정 : ");
+    scanf_s("%d %d", &player_x, &player_y);
 
-    double distance;
+    struct enemy enemy = { enemy_x, enemy_y };
+    struct player player = { player_x, player_y };
 
-    double x1 = pow(enemy.x - player.x, 2);
-    double y1 = pow(enemy.y - player.y, 2);
-
-    distance = sqrt(x1 + y1);
+    double distance = sqrt(pow(enemy.x - player.x, 2) + pow(enemy.y - player.y, 2));
 
     printf("적과의 거리 : %lf\n", distance);
 
     if (distance >= 5.0) {
-        printf("Idle");
+        printf("상태 : Idle");
     }
     else if (distance <= 5.0) {
-        printf("ATTACK");
+        printf("상태 : ATTACK");
+    }*/
+
+#pragma endregion
+    
+#pragma region 바이트 패딩
+    // 멤버 변수를 메모리에서 CPU로 읽을 때 한 번에
+    // 읽을 수 있도록, 컴파일러가 레지스터의 블록에
+    // 맞추어 바이트를 패딩해주는 최적화 작업입니다.
+
+    /*struct Data data = { 'A', 10, 17.5  };
+
+    printf("Data 구조체 크기 : %u\n",sizeof(data));*/
+
+    // 구조체의 크기는 구조체를 구성하는 멤버 중에서 크기가
+    // 가장 큰 자료형의 배수가 되도록 정렬합니다.
+
+    // printf("Data 구조체 크기 : %zu\n", sizeof(struct  class));
+
+    // 구조체 크기의 경우 멤버 변수의 순서에 따라 메모리 크기가
+    // 다르게 설정될 수 있습니다.
+#pragma endregion
+
+#pragma region 자기 참조 구조체
+    
+    struct Node node1 = { 10, NULL };
+    struct Node node2 = { 20, NULL };
+    struct Node node3 = { 30, NULL };
+
+    node1.next = &node2;
+    node2.next = &node3;
+    node3.next = NULL;
+
+    struct Node* currentNode = &node1;
+
+    while (currentNode != NULL) {
+        printf("Data : %d\n", currentNode -> data);
+        currentNode = currentNode->next;
     }
+
 
 #pragma endregion
 
